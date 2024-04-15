@@ -1,127 +1,189 @@
-@font-face {
-    font-family: 'TiltNeon';
-    src: url(fonts/static/TiltNeon-Regular.ttf);
+@font-face 
+{
+  font-family: 'TiltNeon';
+  src: url(fonts/static/TiltNeon-Regular.ttf);
 }
 
-:root {
-    --color-primary: #0073ff;
-    --color-white: #e9e9e9;
-    --color-black: #141d28;
-    --color-black-1: #212b38;
-    --color-bg-1: #ff6347;
-    --color-bg-2: #d61709;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'TiltNeon', sans-serif;
-  }
+:root 
+{
+  --color-white: #e9e9e9;
+  --color-black: #2B2B2A;
+  --color-primary: #269DD9;
+  --color-secondary: #9E9E9E;
+  --color-tertiary: #C8C7C7;
+  --color-bg-1: #ff6347;
+}
 
-  header {
-    font-weight: bold;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    height: 100%;
-  }
-  
-  .logo img {
-    height: 150%;
-    width: auto;
-  }
-  
-  .menu-bar {
-    background-color: var(--color-black);
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    position: relative;
-  }
-  
-  .menu-bar ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  .menu-bar ul li {
-    padding: 10px 30px;
-    position: relative;
-  }
-  
-  .menu-bar ul li a {
-    font-size: 20px;
-    color: var(--color-white);
-    text-decoration: none;
-  
-    transition: all 0.3s;
-  }
-  
-  .menu-bar ul li a:hover {
-    color: var(--color-primary);
-  }
-  
-  .fas {
-    float: right;
-    margin-left: 10px;
-    padding-top: 3px;
-  }
-  
-  .dropdown-menu {
-    display: none;
-  }
-  
-  .menu-bar ul li:hover .dropdown-menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: var(--color-black);
-  }
-  
-  .menu-bar ul li:hover .dropdown-menu ul {
-    display: block;
-    margin: 10px;
-  }
-  
-  .menu-bar ul li:hover .dropdown-menu ul li {
-    width: 150px;
-    padding: 10px;
-  }
-  
-  .dropdown-menu-1 {
-    display: none;
-  }
-  
-  .dropdown-menu ul li:hover .dropdown-menu-1 {
-    display: block;
-    position: absolute;
-    left: 150px;
-    top: 0;
-    background-color: var(--color-black);
-  }
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .contact-button {
-    background-color: var(--color-bg-1);
-    color: var(--color-white);
-    padding: 10px 20px;
-    border-radius: 20px;
-  }
-  
-  .menu-bar ul li .contact-button:hover {
-    background-color: var(--color-bg-2);
-    color: var(--color-white);
-  }
+body 
+{
+  font-family: 'TiltNeon', sans-serif;
+  background-color: var(--color-secondary);
+}
+
+header 
+{
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+p 
+{
+  padding-top: 1.25rem;
+  color: var(--color-secondary);
+}
+
+.logo 
+{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+}
+
+.logo img 
+{
+  height: 150%;
+  width: auto;
+}
+
+.menu-bar 
+{
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  position: relative;
+}
+
+.menu-bar ul 
+{
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li 
+{
+  padding: 0.625rem 1.875rem;
+  position: relative;
+}
+
+.menu-bar ul li a 
+{
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover 
+{
+  color: var(--color-secondary);
+}
+
+.fas 
+{
+  float: right;
+  margin-left: 0.625rem;
+  padding-top: 0.1875rem;
+}
+
+.dropdown-menu 
+{
+  display: none;
+  overflow: hidden;
+  padding: 1.25rem;
+}
+
+.menu-bar ul li:hover .dropdown-menu 
+{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-white);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul 
+{
+  display: block;
+  margin: 0.625rem;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li 
+{
+  width: 28.125rem;
+  padding: 0.625rem;
+  color: var(--color-bg-3);
+}
+
+.contact-button 
+{
+  background-color: var(--color-tertiary);
+  padding: 0.625rem 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.menu-bar ul li .contact-button:hover 
+{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.dropdown-menu-1 
+{
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 
+{
+  display: block;
+  position: absolute;
+  left: 9.375rem;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.dropdown-left 
+{
+  float: left;
+  width: 50%;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+
+.dropdown-right 
+{
+  float: right;
+  width: 50%;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+
+.dropdown-menu::after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
