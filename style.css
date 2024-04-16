@@ -26,6 +26,8 @@ body
   background-color: var(--color-secondary);
 }
 
+/* Header */
+
 header 
 {
   font-weight: bold;
@@ -106,17 +108,20 @@ p
   padding: 1.25rem;
 }
 
-.menu-bar ul li img {
+.menu-bar ul li img 
+{
   width: 1.5rem;
   height: auto;
   margin-right: 0.5rem;
 }
 
-.dropdown-menu ul li {
+.dropdown-menu ul li 
+{
   position: relative;
 }
 
-.dropdown-menu ul li img {
+.dropdown-menu ul li img 
+{
   position: absolute;
   left: -1.25rem;
   top: 50%;
