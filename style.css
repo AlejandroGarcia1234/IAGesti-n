@@ -11,7 +11,6 @@
   --color-primary: #269DD9;
   --color-secondary: #9E9E9E;
   --color-tertiary: #C8C7C7;
-  --color-bg-1: #ff6347;
 }
 
 * 
@@ -107,6 +106,23 @@ p
   padding: 1.25rem;
 }
 
+.menu-bar ul li img {
+  width: 1.5rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.dropdown-menu ul li {
+  position: relative;
+}
+
+.dropdown-menu ul li img {
+  position: absolute;
+  left: -1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .menu-bar ul li:hover .dropdown-menu 
 {
   display: block;
@@ -125,7 +141,7 @@ p
 .menu-bar ul li:hover .dropdown-menu ul li 
 {
   width: 28.125rem;
-  padding: 0.625rem;
+  padding: 0.650rem;
   color: var(--color-bg-3);
 }
 
