@@ -243,9 +243,9 @@ p
   color: var(--color-white);
   text-decoration: none;
   border-radius: 10px;
-  transition: background-color 1s ease;
+  transition: background-color 0.5s ease;
   font-weight: bold;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 7px rgba(29, 29, 29, 0.5);
 }
 
 .cta:hover 
