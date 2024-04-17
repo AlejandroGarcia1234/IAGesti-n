@@ -33,7 +33,6 @@ header
   font-weight: bold;
   position: sticky;
   width: 100%;
-  z-index: 999;
 }
 
 p 
@@ -198,6 +197,61 @@ p
   content: "";
   display: table;
   clear: both;
+}
+
+/* Main */	
+
+.hero 
+{
+  background-image: url('ruta/a/tu/imagen.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 58vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content 
+{
+  justify-content: center;
+}
+
+.titulo 
+{
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(to right, var(--color-white) 0%, var(--color-primary) 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.herop 
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2.25rem;
+  color: var(--color-white);
+}
+
+.cta 
+{
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 1s ease;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cta:hover 
+{
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 /* Footer */
